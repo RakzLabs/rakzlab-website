@@ -1,8 +1,18 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy — Rakzlab Apps",
-  description: "Privacy Policy for Health Calc Hub developed and published by Rakzlab.",
+  title: "Privacy Policy",
+  description:
+    "Privacy Policy for Health Calc Hub and mobile applications developed and published by Rakzlab Apps.",
+  alternates: {
+    canonical: "/privacy-policy",
+  },
+  openGraph: {
+    title: "Privacy Policy | Rakzlab Apps",
+    description:
+      "Privacy Policy for Health Calc Hub and mobile applications developed and published by Rakzlab Apps.",
+    url: "/privacy-policy",
+  },
 };
 
 export default function PrivacyPolicy() {

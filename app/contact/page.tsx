@@ -1,8 +1,18 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact — Rakzlab Apps",
-  description: "Contact Rakzlab Apps for support and business inquiries.",
+  title: "Contact",
+  description:
+    "Contact Rakzlab Apps for inquiries, developer support, or questions regarding Health Calc Hub and our mobile apps.",
+  alternates: {
+    canonical: "/contact",
+  },
+  openGraph: {
+    title: "Contact | Rakzlab Apps",
+    description:
+      "Contact Rakzlab Apps for inquiries, developer support, or questions regarding Health Calc Hub.",
+    url: "/contact",
+  },
 };
 
 export default function Contact() {

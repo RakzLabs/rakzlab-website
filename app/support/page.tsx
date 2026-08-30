@@ -1,8 +1,18 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Support — Rakzlab Apps",
-  description: "Get support for Health Calc Hub and Rakzlab Apps.",
+  title: "Support",
+  description:
+    "Get support, report bugs, and submit feedback for Health Calc Hub and Rakzlab Apps.",
+  alternates: {
+    canonical: "/support",
+  },
+  openGraph: {
+    title: "Support | Rakzlab Apps",
+    description:
+      "Get support, report bugs, and submit feedback for Health Calc Hub and Rakzlab Apps.",
+    url: "/support",
+  },
 };
 
 export default function Support() {
