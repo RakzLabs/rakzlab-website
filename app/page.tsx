@@ -71,9 +71,43 @@ const whyCards = [
   },
 ];
 
+const appSchema = {
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  name: "Health Calc Hub",
+  operatingSystem: "Android",
+  applicationCategory: "HealthApplication",
+  description:
+    "Health Calc Hub is an all-in-one collection of health and fitness calculators designed to provide fast, accurate, and easy-to-understand results on-device.",
+  offers: {
+    "@type": "Offer",
+    price: "0",
+    priceCurrency: "USD",
+  },
+  installUrl: PLAY_STORE_URL,
+  downloadUrl: PLAY_STORE_URL,
+  featureList: [
+    "BMI Calculator",
+    "BMR Calculator",
+    "TDEE Calculator",
+    "Calorie Calculator",
+    "Body Fat Calculator",
+    "Ideal Weight Calculator",
+  ],
+  author: {
+    "@type": "Organization",
+    name: "Rakzlab Apps",
+    url: "https://www.rakzlab.com",
+  },
+};
+
 export default function HomePage() {
   return (
     <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(appSchema) }}
+      />
       {/* ================= HERO ================= */}
       <section className="mx-auto grid max-w-6xl items-center gap-16 px-6 pb-16 pt-16 md:grid-cols-2 md:pt-24">
         <div>

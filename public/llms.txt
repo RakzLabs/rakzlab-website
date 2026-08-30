@@ -1,0 +1,14 @@
+# Rakzlab Apps
+
+> Modern mobile applications that help people make better decisions through accurate calculations, clean design, and an intuitive user experience.
+
+## Applications
+
+- [Health Calc Hub](https://play.google.com/store/apps/details?id=com.rakzlab.healthcalchub): An all-in-one health and fitness calculator mobile application for Android. Features include BMI Calculator, BMR Calculator, TDEE Calculator, Calorie Calculator, Body Fat Calculator, and Ideal Weight Calculator. All calculation formulas are verified and processed on-device whenever possible without requiring an account or sign-up.
+
+## Pages & Resources
+
+- [Home](https://www.rakzlab.com/): Official homepage, product showcase, and feature overview.
+- [Privacy Policy](https://www.rakzlab.com/privacy-policy): Comprehensive privacy practices explaining on-device processing, permissions, and Google third-party services (Google Play Services, Firebase Analytics, Google AdMob).
+- [Support](https://www.rakzlab.com/support): User support topics, bug reports, feature requests, and contact response times.
+- [Contact](https://www.rakzlab.com/contact): Business inquiries and developer support (rakzlab@gmail.com).

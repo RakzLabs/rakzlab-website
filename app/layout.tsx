@@ -48,13 +48,49 @@ export const metadata: Metadata = {
     siteName: "Rakzlab Apps",
     locale: "en_US",
     type: "website",
+    images: [
+      {
+        url: "/health-calc-hub.png",
+        width: 512,
+        height: 512,
+        alt: "Health Calc Hub Logo by Rakzlab Apps",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Rakzlab Apps — Health & Everyday Mobile Tools",
     description:
       "Health Calc Hub — all-in-one collection of health and fitness calculators designed to provide fast, accurate results.",
+    images: ["/health-calc-hub.png"],
   },
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.rakzlab.com/#organization",
+      "name": "Rakzlab Apps",
+      "url": "https://www.rakzlab.com",
+      "logo": "https://www.rakzlab.com/health-calc-hub.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "rakzlab@gmail.com",
+        "contactType": "customer support",
+      },
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.rakzlab.com/#website",
+      "url": "https://www.rakzlab.com",
+      "name": "Rakzlab Apps",
+      "publisher": {
+        "@id": "https://www.rakzlab.com/#organization",
+      },
+    },
+  ],
 };
 
 export default function RootLayout({
@@ -64,6 +100,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${spaceGrotesk.variable} ${inter.variable}`}>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body className="min-h-screen bg-paper text-ink antialiased flex flex-col justify-between">
         <Nav />
         <main className="flex-1">{children}</main>
