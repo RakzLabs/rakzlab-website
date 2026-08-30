@@ -64,6 +64,11 @@ export const metadata: Metadata = {
       "Health Calc Hub — all-in-one collection of health and fitness calculators designed to provide fast, accurate results.",
     images: ["/health-calc-hub.png"],
   },
+  verification: {
+    other: {
+      "msvalidate.01": "4076AFE5AA38829A91ED35D4572372B3",
+    },
+  },
 };
 
 const jsonLd = {
