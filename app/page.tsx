@@ -20,31 +20,37 @@ const calculators = [
     icon: Activity,
     name: "BMI Calculator",
     desc: "Instant Body Mass Index with metric & imperial units and clear classification bands.",
+    status: "Live",
   },
   {
     icon: Flame,
     name: "BMR Calculator",
     desc: "Your Basal Metabolic Rate — the energy your body needs at complete rest.",
+    status: "Upcoming",
   },
   {
     icon: Timer,
     name: "TDEE Calculator",
     desc: "Total Daily Energy Expenditure, factoring in activity level and lifestyle.",
+    status: "Upcoming",
   },
   {
     icon: Scale,
     name: "Calorie Calculator",
     desc: "Daily calorie targets for weight loss, maintenance, or healthy weight gain.",
+    status: "Upcoming",
   },
   {
     icon: Percent,
     name: "Body Fat Calculator",
     desc: "Estimate body fat percentage using proven circumference-based methods.",
+    status: "Upcoming",
   },
   {
     icon: Ruler,
     name: "Ideal Weight Calculator",
     desc: "A healthy target weight range based on your height and frame.",
+    status: "Upcoming",
   },
 ];
 
@@ -283,21 +289,30 @@ export default function HomePage() {
         </div>
 
         <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {calculators.map(({ icon: Icon, name, desc }) => (
-            <div
-              key={name}
-              className="relative rounded-2xl border border-line bg-white p-6 transition-transform hover:-translate-y-1 hover:border-primary-light"
-            >
-              <span className="absolute right-4 top-4 rounded-full bg-[#E8F6EE] px-2.5 py-1 text-[10px] font-bold uppercase tracking-wide text-good">
-                Live
-              </span>
-              <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-paper-alt text-primary">
-                <Icon className="h-5 w-5" />
+          {calculators.map(({ icon: Icon, name, desc, status }) => {
+            const isLive = status === "Live";
+            return (
+              <div
+                key={name}
+                className="relative rounded-2xl border border-line bg-white p-6 transition-transform hover:-translate-y-1 hover:border-primary-light"
+              >
+                <span
+                  className={`absolute right-4 top-4 rounded-full px-2.5 py-1 text-[10px] font-bold uppercase tracking-wide ${
+                    isLive
+                      ? "bg-[#E8F6EE] text-good"
+                      : "border border-line/60 bg-paper-alt text-ink-faint"
+                  }`}
+                >
+                  {status}
+                </span>
+                <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-paper-alt text-primary">
+                  <Icon className="h-5 w-5" />
+                </div>
+                <h3 className="font-display text-base font-semibold">{name}</h3>
+                <p className="mt-2 text-sm text-ink-soft">{desc}</p>
               </div>
-              <h3 className="font-display text-base font-semibold">{name}</h3>
-              <p className="mt-2 text-sm text-ink-soft">{desc}</p>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </section>
 
