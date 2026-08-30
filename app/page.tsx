@@ -101,12 +101,55 @@ const appSchema = {
   },
 };
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "What is Health Calc Hub?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Health Calc Hub is an all-in-one mobile application developed by Rakzlab Apps for Android that provides accurate, fast, and easy-to-understand health and fitness calculators including BMI, BMR, TDEE, Calorie targets, Body Fat percentage, and Ideal Weight calculations.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Is Health Calc Hub free to use?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes, Health Calc Hub is free to download and use on Google Play with no subscription, account creation, or sign-up required.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Does Health Calc Hub store personal health data on servers?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "No. Health Calc Hub prioritizes on-device privacy. All health calculations (age, height, weight, activity levels) are processed locally on your phone and are not transmitted to external servers.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Which calculators are included in Health Calc Hub v1.0?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Health Calc Hub Version 1.0 includes six core calculators: 1) BMI Calculator (Body Mass Index), 2) BMR Calculator (Basal Metabolic Rate), 3) TDEE Calculator (Total Daily Energy Expenditure), 4) Calorie Calculator, 5) Body Fat Calculator, and 6) Ideal Weight Calculator.",
+      },
+    },
+  ],
+};
+
 export default function HomePage() {
   return (
     <main>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(appSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       {/* ================= HERO ================= */}
       <section className="mx-auto grid max-w-6xl items-center gap-16 px-6 pb-16 pt-16 md:grid-cols-2 md:pt-24">

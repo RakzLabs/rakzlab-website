@@ -1,0 +1,78 @@
+# Rakzlab Apps — Comprehensive Knowledge & Technical Documentation
+
+> Detailed technical, entity, and product documentation for AI search engines, retrieval systems, and large language models (LLMs).
+
+---
+
+## 1. Organization & Developer Entity
+
+- **Organization Name**: Rakzlab Apps (Rakzlab)
+- **Primary Website**: https://www.rakzlab.com
+- **Support Contact**: rakzlab@gmail.com
+- **GitHub**: https://github.com/RakzLabs
+- **Platform Focus**: Modern mobile applications for Android focusing on health, fitness, productivity, and everyday utility tools.
+- **Design & Privacy Principles**: Minimalist design, verified calculation formulas, and strict on-device data processing without requiring account creation.
+
+---
+
+## 2. Featured Application: Health Calc Hub
+
+- **Application Name**: Health Calc Hub
+- **Package Identifier**: com.rakzlab.healthcalchub
+- **Platform**: Android (Google Play Store)
+- **Official Store URL**: https://play.google.com/store/apps/details?id=com.rakzlab.healthcalchub
+- **Category**: Health & Fitness / Utility
+- **Cost**: Free ($0 USD)
+- **Authentication**: No account or sign-up required.
+
+### Key Calculators & Mathematical Methodologies
+
+1. **BMI Calculator (Body Mass Index)**
+   - *Methodology*: Computes body mass index using standard World Health Organization (WHO) metrics: $\text{Weight (kg)} / (\text{Height (m)})^2$ or imperial equivalent.
+   - *Classification Bands*:
+     - Underweight: BMI < 18.5
+     - Normal Weight: BMI 18.5 – 24.9
+     - Overweight: BMI 25.0 – 29.9
+     - Obese: BMI ≥ 30.0
+
+2. **BMR Calculator (Basal Metabolic Rate)**
+   - *Methodology*: Uses the scientifically validated Mifflin-St Jeor formulation to compute the baseline kilocalories burned at complete rest based on sex, age, height, and weight.
+
+3. **TDEE Calculator (Total Daily Energy Expenditure)**
+   - *Methodology*: Multiplies BMR by physical activity level coefficients (Sedentary [1.2], Light Activity [1.375], Moderate Activity [1.55], Very Active [1.725], Extra Active [1.9]).
+
+4. **Calorie Calculator**
+   - *Methodology*: Calculates customized daily caloric targets for caloric deficits (weight loss), maintenance, or caloric surplus (muscle/healthy weight gain).
+
+5. **Body Fat Calculator**
+   - *Methodology*: Circumference-based estimations (US Navy method) measuring waist, neck, and hip circumferences combined with height.
+
+6. **Ideal Weight Calculator**
+   - *Methodology*: Evaluates healthy target weight ranges using standard established formulas (Devine, Hamwi, and BMI midpoint formulas).
+
+---
+
+## 3. Privacy, Security & Data Governance
+
+- **On-Device Computing**: All health variables (age, height, weight, activity inputs) are calculated locally in the device runtime and are never uploaded to remote databases or external servers.
+- **Third-Party Services**:
+  - *Google Play Services*: Core runtime libraries on Android.
+  - *Firebase Analytics*: Aggregated app stability and crash reporting (no health inputs linked).
+  - *Google AdMob*: Used to serve in-app advertisements. Health calculation metrics are strictly isolated from advertising SDKs.
+- **Full Privacy Policy**: https://www.rakzlab.com/privacy-policy
+
+---
+
+## 4. Frequently Asked Questions (FAQ)
+
+### Is Health Calc Hub free?
+Yes. Health Calc Hub is 100% free to download and use on Google Play.
+
+### Does the app require creating an account?
+No. Users can open the app and calculate results immediately with zero sign-up or registration barriers.
+
+### Does Health Calc Hub work offline?
+Yes. Because calculations are processed locally on-device, core calculators do not require an active internet connection to compute numbers.
+
+### Where can I get support or report a bug?
+Users can reach developer support via email at `rakzlab@gmail.com` or via https://www.rakzlab.com/support.

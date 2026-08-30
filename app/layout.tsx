@@ -85,6 +85,10 @@ const jsonLd = {
         "email": "rakzlab@gmail.com",
         "contactType": "customer support",
       },
+      "sameAs": [
+        "https://play.google.com/store/apps/details?id=com.rakzlab.healthcalchub",
+        "https://github.com/RakzLabs",
+      ],
     },
     {
       "@type": "WebSite",

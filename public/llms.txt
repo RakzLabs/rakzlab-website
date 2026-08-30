@@ -2,6 +2,10 @@
 
 > Modern mobile applications that help people make better decisions through accurate calculations, clean design, and an intuitive user experience.
 
+## Full Technical Documentation
+
+- [Full LLM Knowledge Document](https://www.rakzlab.com/llms-full.txt): Complete technical guide including calculator methodologies, formula references, FAQ, and privacy policies.
+
 ## Applications
 
 - [Health Calc Hub](https://play.google.com/store/apps/details?id=com.rakzlab.healthcalchub): An all-in-one health and fitness calculator mobile application for Android. Features include BMI Calculator, BMR Calculator, TDEE Calculator, Calorie Calculator, Body Fat Calculator, and Ideal Weight Calculator. All calculation formulas are verified and processed on-device whenever possible without requiring an account or sign-up.
